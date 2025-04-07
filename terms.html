@@ -28,6 +28,7 @@
             max-width: 1000px;
             margin: 0 auto;
             padding: 0 20px;
+            position: relative;
         }
         
         .terms-content {
@@ -64,9 +65,67 @@
             color: var(--text-light);
             margin-bottom: 30px;
         }
+
+        /* AdSense Styling */
+        .adsense-container {
+            margin: 40px auto;
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        /* Vertical Sidebar Ads */
+        .sidebar-ad {
+            position: fixed;
+            width: 160px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 100;
+        }
+
+        .sidebar-ad.left {
+            left: 10px;
+        }
+
+        .sidebar-ad.right {
+            right: 10px;
+        }
+
+        @media (max-width: 1200px) {
+            .sidebar-ad {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- Vertical Left Sidebar Ad -->
+    <div class="sidebar-ad left">
+        <!-- Google AdSense Vertical Left -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <!-- Vertical Right Sidebar Ad -->
+    <div class="sidebar-ad right">
+        <!-- Google AdSense Vertical Right -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -91,6 +150,21 @@
         </div>
     </header>
 
+    <!-- AdSense Slot 1 - After Hero -->
+    <div class="container">
+        <div class="adsense-container" data-aos="fade-up">
+            <!-- Google AdSense Slot 1 -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="XXXXXXXXXX"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
     <!-- Terms Content -->
     <section class="terms-section">
         <div class="terms-container">
@@ -103,7 +177,7 @@
                 
                 <h2>2. Intellectual Property Rights</h2>
                 <p>All content on this website, including text, graphics, logos, and images, is the property of WealthBuilders and protected by copyright laws. You may not reproduce, distribute, or create derivative works without our express written permission.</p>
-                
+                          
                 <h2>3. User Responsibilities</h2>
                 <p>As a user of our website, you agree not to:</p>
                 <ul>
