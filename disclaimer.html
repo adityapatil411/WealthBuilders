@@ -11,10 +11,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Vertical Ads */
+        .vertical-ad {
+            position: fixed;
+            width: 160px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 100;
+        }
+        
+        .vertical-ad.left {
+            left: 10px;
+        }
+        
+        .vertical-ad.right {
+            right: 10px;
+        }
+        
         .disclaimer-section {
             padding: 80px 0;
             max-width: 800px;
             margin: 0 auto;
+            position: relative;
         }
         
         .disclaimer-section h2 {
@@ -46,9 +64,43 @@
             margin: 30px 0;
             border-radius: 0 4px 4px 0;
         }
+        
+        @media (max-width: 1200px) {
+            .vertical-ad {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- Vertical Ad Left -->
+    <div class="vertical-ad left" data-aos="fade-right">
+        <!-- Google AdSense Vertical Ad -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+        <!-- Vertical Ad Unit -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:160px;height:600px"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- Vertical Ad Right -->
+    <div class="vertical-ad right" data-aos="fade-left">
+        <!-- Google AdSense Vertical Ad -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+        <!-- Vertical Ad Unit -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:160px;height:600px"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -72,6 +124,7 @@
             <p>Important legal information about our website and content</p>
         </div>
     </header>
+    
 
     <!-- Disclaimer Content -->
     <section class="disclaimer-section container">
